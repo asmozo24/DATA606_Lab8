@@ -1,0 +1,159 @@
+---
+title: "Chapter 8: Introduction to linear regression"
+author: "Alexis Mekueko"
+date: "10/24/2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  slidy_presentation: default
+  beamer_presentation: default
+  ioslides_presentation: default
+header-includes:
+- \usepackage{tikz}
+- \usetikzlibrary{positioning,shapes.multipart,shapes}
+---
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## R Packages
+
+```{r load-packages, message=FALSE}
+
+library(tidyverse) #loading all library needed for this assignment
+library(openintro)
+#head(fastfood)
+library(readxl)
+library(data.table)
+#library(DT)
+library(knitr)
+
+library(readr)
+#library(plyr)
+library(dplyr)
+library(stringr)
+#library(XML)
+#library(RCurl)
+#library(jsonlite)
+#library(httr)
+
+#library(maps)
+#library(dice)
+# #library(VennDiagram)
+# #library(help = "dice")
+#ibrary(DBI)
+#library(dbplyr)
+
+# library(rstudioapi)
+# library(RJDBC)
+# library(odbc)
+# library(RSQLite)
+# #library(rvest)
+
+#library(readtext)
+#library(ggpubr)
+#library(fitdistrplus)
+#library(ggplot2)
+#library(moments)
+#library(qualityTools)
+#library(normalp)
+#library(utils)
+#library(MASS)
+#library(qqplotr)
+library(DATA606)
+
+```
+
+Github Link: https://github.com/asmozo24/DATA607_Assignment9.git
+
+Web link: https://rpubs.com/amekueko/680865
+
+
+### Introduction to linear regression
+
+
+The Human Freedom Index is a report that attempts to summarize the idea of “freedom” through a bunch of different variables for many countries around the globe. It serves as a rough objective measure for the relationships between the different types of freedom - whether it’s political, religious, economical or personal freedom - and other social and economic circumstances. The Human Freedom Index is an annually co-published report by the Cato Institute, the Fraser Institute, and the Liberales Institut at the Friedrich Naumann Foundation for Freedom.
+
+In this lab, you’ll be analyzing data from Human Freedom Index reports from 2008-2016. Your aim will be to summarize a few of the relationships within the data both graphically and numerically in order to find which variables can help tell a story about freedom.
+
+
+##The data
+The data we’re working with is in the openintro package and it’s called hfi, short for Human Freedom Index.
+
+#Exercice 1
+
+What are the dimensions of the dataset?
+
+
+
+```{r}
+
+data(hfi)
+
+```
+
+#Exercice 2
+
+What type of plot would you use to display the relationship between the personal freedom score, pf_score, and one of the other numerical variables? Plot this relationship using the variable pf_expression_control as the predictor. Does the relationship look linear? If you knew a country’s pf_expression_control, or its score out of 10, with 0 being the most, of political pressures and controls on media content, would you be comfortable using a linear model to predict the personal freedom score?
+
+```{r, results="asis", echo=FALSE}
+
+cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+
+```
+
+```{r, results="asis", echo=FALSE}
+
+cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+
+```
+
+```{r, results="asis", echo=FALSE}
+
+cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+
+```
+
+```{r, results="asis", echo=FALSE}
+
+cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+
+```
+
+
+                   
+
+#Conclusion 
+The New York Times API can be easy to use in scraping articles published on their website. However, I think the website it is pretty nested and need a better understanding of the New York Times website structure. 
+
+\tikzset{basic/.style={
+        draw,
+        rectangle split,
+        rectangle split parts=2,
+        rectangle split part fill={blue!20,white},
+        minimum width=2.5cm,
+        text width=2cm,
+        align=left,
+        font=\itshape
+    },
+    Diamond/.style={ diamond, 
+                        draw, 
+                        shape aspect=2, 
+                        inner sep = 2pt,
+                        text centered,
+                        fill=blue!10!white,
+                        font=\itshape
+                      }
+        }
+
+
