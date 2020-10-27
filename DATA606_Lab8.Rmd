@@ -3,9 +3,9 @@ title: "Chapter 8: Introduction to linear regression"
 author: "Alexis Mekueko"
 date: "10/24/2020"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
   slidy_presentation: default
   beamer_presentation: default
   ioslides_presentation: default
@@ -70,7 +70,7 @@ library(DATA606)
 
 ```
 
-Github Link: https://github.com/asmozo24/DATA607_Assignment9.git
+Github Link: https://github.com/asmozo24/DATA606_Lab6
 
 Web link: https://rpubs.com/amekueko/680865
 
@@ -104,29 +104,29 @@ What type of plot would you use to display the relationship between the personal
 
 ```{r, results="asis", echo=FALSE}
 
-cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
-cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+#cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+#cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
 
 ```
 
 ```{r, results="asis", echo=FALSE}
 
-cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
-cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+#cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+#cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
 
 ```
 
 ```{r, results="asis", echo=FALSE}
 
-cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
-cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+#cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+#cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
 
 ```
 
 ```{r, results="asis", echo=FALSE}
 
-cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
-cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
+#cat(paste0("The most popular article from New York Times shared on facebook: ","[", "[click here]", "](", sampl1, ")","\n"), "\n")
+#cat(paste0("The most viewed article on The New York Times: ","[", "[click here]", "](",sampl2, ")","\n"))
 
 ```
 
